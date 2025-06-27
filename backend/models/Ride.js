@@ -8,7 +8,7 @@ const rideSchema = new mongoose.Schema({
   time: { type: String, required: true },
   availableSeats: { type: Number, required: true },
   price: { type: Number, required: true },
-  status: { type: String, enum: ['active', 'completed', 'cancelled'], default: 'active' },
+  status: { type: String, enum: ['active', 'completed', 'cancelled', 'full'], default: 'active' },
 }, { timestamps: true });
 
 module.exports = mongoose.model('Ride', rideSchema);

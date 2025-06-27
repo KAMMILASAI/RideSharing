@@ -14,7 +14,7 @@ app.use(express.json());
 // Routes
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/rides', require('./routes/ride'));
-// Add other routes here (notifications, etc.)
+app.use('/api/notifications', require('./routes/notificationRoutes'));
 app.use('/api/test', require('./routes/test'));
 app.use('/api/chat', require('./routes/chat'));
 
