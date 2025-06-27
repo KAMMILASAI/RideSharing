@@ -13,7 +13,7 @@ const Profile = () => {
       try {
         setLoading(true);
         const token = localStorage.getItem('token');
-        const res = await fetch(`${process.env.REACT_APP_API_URL || 'http://localhost:5000/api'}/auth/profile`, {
+        const res = await fetch(`${process.env.REACT_APP_API_URL || 'https://ridesharingbackend.onrender.com/api'}/auth/profile`, {
           headers: { 'Authorization': `Bearer ${token}` }
         });
         const data = await res.json();
@@ -40,7 +40,7 @@ const Profile = () => {
     setMessage('');
     try {
       const token = localStorage.getItem('token');
-      const res = await fetch(`${process.env.REACT_APP_API_URL || 'http://localhost:5000/api'}/auth/profile`, {
+      const res = await fetch(`${process.env.REACT_APP_API_URL || 'https://ridesharingbackend.onrender.com/api'}/auth/profile`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
