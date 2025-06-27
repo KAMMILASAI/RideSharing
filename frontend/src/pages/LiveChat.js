@@ -3,8 +3,8 @@ import { AuthContext } from '../context/AuthContext';
 import ChatBox from '../components/ChatBox';
 import { io } from 'socket.io-client';
 
-const SOCKET_URL = 'http://localhost:5000';
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+const SOCKET_URL = 'https://ridesharingbackend.onrender.com';
+const API_URL = process.env.REACT_APP_API_URL || 'https://ridesharingbackend.onrender.com/api';
 
 const LiveChat = () => {
   const [messages, setMessages] = useState([]);
