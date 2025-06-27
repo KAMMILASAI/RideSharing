@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 5000;
 const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/ridesharing';
 
 // Middleware
-app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
+app.use(cors({ origin: 'https://ridesharing-version-1.netlify.app', credentials: true }));
 app.use(express.json());
 
 // Routes
@@ -25,7 +25,7 @@ mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
     // Socket.IO setup
     const server = app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
     const io = require('socket.io')(server, {
-      cors: { origin: 'http://localhost:3000', methods: ['GET', 'POST'] }
+      cors: { origin: 'https://ridesharing-version-1.netlify.app', methods: ['GET', 'POST'] }
     });
     require('./sockets/chatSocket')(io);
 
