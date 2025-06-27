@@ -1,4 +1,4 @@
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+const API_URL = process.env.REACT_APP_API_URL || 'https://ridesharingbackend.onrender.com/api';
 
 const notificationService = {
   getNotifications: async () => {
@@ -26,7 +26,7 @@ const notificationService = {
     return await res.json();
   },
   deleteNotification: async (id) => {
-    const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+    const API_URL = process.env.REACT_APP_API_URL || 'https://ridesharingbackend.onrender.com/api';
     const res = await fetch(`${API_URL}/notifications/${id}`, {
       method: 'DELETE',
       headers: { 'Authorization': `Bearer ${localStorage.getItem('token')}` }
