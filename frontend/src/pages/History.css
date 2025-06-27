@@ -1,0 +1,67 @@
+.history-container {
+  background: #fff;
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+}
+
+.delete-btn {
+  background: #e53935;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.4rem 1.1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.7rem;
+  transition: background 0.2s;
+}
+.delete-btn:hover {
+  background: #b71c1c;
+}
+.history-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.history-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.history-card {
+  background: #f7faff;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(25, 118, 210, 0.07);
+  margin-bottom: 1.2rem;
+  padding: 1.1rem 1.2rem 0.7rem 1.2rem;
+  position: relative;
+  transition: background 0.2s;
+  border-left: 5px solid #1976d2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+.status-completed {
+  border-left: 5px solid #43a047;
+  background: #e8f5e9;
+}
+.status-cancelled {
+  border-left: 5px solid #e53935;
+  background: #ffebee;
+}
+.status-full {
+  border-left: 5px solid #ffa000;
+  background: #fff8e1;
+}
+@media (max-width: 600px) {
+  .history-container {
+    padding: 1rem 0.3rem 0.7rem 0.3rem;
+  }
+  .history-card {
+    padding: 0.8rem 0.5rem 0.5rem 0.7rem;
+    gap: 0.5rem;
+    font-size: 0.98rem;
+  }
+}
