@@ -20,18 +20,5 @@ RideShareX is a full-stack ride sharing web application that connects drivers wi
 📜 History
 📝 Edit Profile
 
-## 🧰 Tech Stack
-
-### Frontend
-- React.js (via `create-react-app`)
-- Axios for API calls
-- CSS for custom design
-
-### Backend
-- Node.js + Express.js
-- MongoDB + Mongoose
-- JWT for authentication
-- Bcrypt for password security
-- Socket.io for live chat and notifications
 
 
