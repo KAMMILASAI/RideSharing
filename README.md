@@ -7,7 +7,7 @@ RideShareX is a full-stack ride sharing web application that connects drivers wi
 ## 🌐 Live Demo
 ⚠️ Note
 🕒 Demo may take a few seconds to load because it’s hosted on a free server. The backend may go to sleep when idle — please be patient!
-🔗 [Live App]([https://your-deployment-link-here.com](https://ridesharing-version-1.netlify.app/))
+🔗 [View the App Here](https://ridesharing-version-1.netlify.app)
 
 ---
 
